@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b4af7</color>
+    <color name="colorPrimaryDark">#233bc6</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--WHITE-->
+    <color name="white">#ffffff</color>
+    <color name="transparentWhite">#99ffffff</color>
+
+
+    <!--WEB COLORS-->
+    <color name="webColorBG">#141f72</color>
+</resources>
