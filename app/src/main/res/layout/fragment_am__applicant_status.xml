@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NavDrawerItems.AM.ApplicantStatusFragment"
+    android:background="@drawable/my_splash_login_blue_translucent_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp"
+        android:background="@color/clouds">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/webColorBG"/>
+
+                <!--TODO: Applicant First and Last Name-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/tvApplicantFName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Android"
+                        android:padding="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal|bold"/>
+
+                    <TextView
+                        android:id="@+id/tvApplicantLName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Studio"
+                        android:padding="2dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal|bold"/>
+
+                </LinearLayout>
+
+                <!--TODO: Applicant Email-->
+                <TextView
+                    android:id="@+id/tvApplicantEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android@studio.com"
+                    android:padding="1dp"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:layout_gravity="center_horizontal"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/application_status_title"
+                    android:paddingLeft="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="14sp"
+                    android:textStyle="italic|bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:padding="1dp"
+                    android:gravity="center_horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_weight=".43"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/ivGreenLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/card_material_greenish"/>
+
+                            <TextView
+                                android:id="@+id/tvVerbAssessmentScore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="98"
+                                android:textStyle="bold"
+                                android:textSize="50sp"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/card_material_greenish"
+                                android:layout_below="@id/ivGreenLine"/>
+
+                            <TextView
+                                android:id="@+id/tvVerbAssessmentTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Verbal Assessment Title"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:gravity="center_horizontal"
+                                android:layout_below="@id/tvVerbAssessmentScore"/>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_weight=".53"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/ivYellowLine"
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@color/card_material_yellowish"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="5dp"
+                                android:weightSum="1"
+                                android:gravity="center_horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".4"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvReadingCompreScore"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="98"
+                                        android:textStyle="bold"
+                                        android:textSize="50sp"
+                                        android:textColor="@color/card_material_yellowish"
+                                        android:gravity="center_horizontal"/>
+
+                                    <TextView
+                                        android:id="@+id/tvReadingCompreScoreTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Reading Comprehension"
+                                        android:textStyle="bold"
+                                        android:textSize="10sp"
+                                        android:gravity="center_horizontal"/>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_weight=".01"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/clouds"
+                                    android:layout_margin="2dp"/>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".4"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/tvGramAndVocabScore"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="98"
+                                        android:textStyle="bold"
+                                        android:textSize="50sp"
+                                        android:textColor="@color/card_material_yellowish"
+                                        android:gravity="center_horizontal"/>
+
+                                    <TextView
+                                        android:id="@+id/tvGramAndVocabScoreTitle"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Grammar and Vocabulary"
+                                        android:textStyle="bold"
+                                        android:textSize="10sp"
+                                        android:gravity="center_horizontal"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/clouds"
+                                android:layout_margin="3dp"/>
+
+                            <TextView
+                                android:id="@+id/tvWrittenExamTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Written Exam Title"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                                android:gravity="center_horizontal"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginBottom="5dp"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+<!--TODO: Account Specific EXAM-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="5dp">
+
+<!--TODO: Technical-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/card_material_pinkish"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/white"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tvTechnicalScore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="98"
+                                android:textStyle="bold"
+                                android:textSize="50sp"
+                                android:textColor="@color/card_material_pinkish"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/clouds"
+                                android:layout_margin="1dp"/>
+
+                            <TextView
+                                android:id="@+id/tvTechnicalScoreTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Technical"
+                                android:textStyle="normal|bold"
+                                android:textSize="14sp"
+                                android:gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+<!--TODO: Financial-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/card_material_yellowish"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/white"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tvFinancialScore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="98"
+                                android:textStyle="bold"
+                                android:textSize="50sp"
+                                android:textColor="@color/card_material_yellowish"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/clouds"
+                                android:layout_margin="1dp"/>
+
+                            <TextView
+                                android:id="@+id/tvFinancialScoreTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Financial"
+                                android:textStyle="normal|bold"
+                                android:textSize="14sp"
+                                android:gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+<!--TODO: Sales-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/card_material_greenish"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/white"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tvSalesScore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="98"
+                                android:textStyle="bold"
+                                android:textSize="50sp"
+                                android:textColor="@color/card_material_greenish"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/clouds"
+                                android:layout_margin="1dp"/>
+
+                            <TextView
+                                android:id="@+id/tvSalesTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Sales"
+                                android:textStyle="normal|bold"
+                                android:textSize="14sp"
+                                android:gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+<!--TODO: Others-->
+                    <android.support.v7.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/card_material_orange"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/white"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/tvOthersScore"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="98"
+                                android:textStyle="bold"
+                                android:textSize="50sp"
+                                android:textColor="@color/card_material_orange"
+                                android:gravity="center_horizontal"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:background="@color/clouds"
+                                android:layout_margin="1dp"/>
+
+                            <TextView
+                                android:id="@+id/tvOthersScoreTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Others"
+                                android:textStyle="normal|bold"
+                                android:textSize="14sp"
+                                android:gravity="center_horizontal"/>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="@color/card_material_yellowish">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hrCommentTitle"
+                            android:textStyle="normal|bold"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="0dp"
+                            android:paddingEnd="0dp"
+                            android:gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/amHRComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hrHintComment"
+                            android:textStyle="normal"
+                            android:layout_margin="2dp"
+                            android:paddingStart="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="0dp"
+                            android:paddingEnd="0dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@color/white"
+                            android:cursorVisible="false"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom|end">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fit"
+                        android:padding="1dp"
+                        android:background="@drawable/my_btn_bg_w_borderline"
+                        android:layout_margin="2dp"
+                        android:textStyle="normal|bold"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not Fit"
+                        android:padding="1dp"
+                        android:background="@drawable/my_btn_bg_w_borderline"
+                        android:layout_margin="2dp"
+                        android:textStyle="normal|bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp">
+
+<!--TODO: Applicant Profile Photo-->
+            <RelativeLayout
+                android:id="@+id/relLayApplicantProfilePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerHorizontal="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civApplicantProfilePhoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/my_profile_picture"
+                    app:civ_border_width="3dp"
+                    app:civ_border_color="@color/colorAccent"/>
+
+                <TextView
+                    android:id="@+id/tvApplicantOverAllAvg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100.00%"
+                    android:background="@color/colorAccent"
+                    android:layout_alignTop="@id/civApplicantProfilePhoto"
+                    android:layout_alignRight="@id/civApplicantProfilePhoto"
+                    android:layout_alignEnd="@id/civApplicantProfilePhoto"
+                    android:padding="3dp"
+                    android:textColor="@color/white"/>
+
+            </RelativeLayout>
+
+
+<!--TODO: APPLICANT Scorecard Category Averages-->
+            <LinearLayout
+                android:id="@+id/linLayApplicantScorecardPsiLavr"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@id/relLayApplicantProfilePhoto"
+                android:layout_toStartOf="@id/relLayApplicantProfilePhoto"
+                android:gravity="center_vertical">
+
+                <!--PSI-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp">
+
+                    <!--TODO: PSI Average-->
+                    <TextView
+                        android:id="@+id/tvApplicantPSIAvgScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20.00%"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:background="@drawable/my_textview_transparent_background"/>
+
+                    <!--PSI AVG TITLE-->
+                    <TextView
+                        android:id="@+id/tvApplicantPSITitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PSI"
+                        android:textColor="@color/white"
+                        android:padding="4dp"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+
+                <!--LAVR-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp">
+
+
+                    <TextView
+                        android:id="@+id/tvApplicantLAVRAvgScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20.00%"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:background="@drawable/my_textview_transparent_background"/>
+
+                    <!--LAVR AVG TITLE-->
+                    <TextView
+                        android:id="@+id/tvApplicantLAVRTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LAVR"
+                        android:textColor="@color/white"
+                        android:padding="4dp"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLayApplicantScorecardDscIfsc"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@id/relLayApplicantProfilePhoto"
+                android:layout_toEndOf="@id/relLayApplicantProfilePhoto"
+                android:gravity="center_vertical">
+
+                <!--DSC-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp">
+
+
+                    <TextView
+                        android:id="@+id/tvApplicantDSCAvgScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30.00%"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:background="@drawable/my_textview_transparent_background"/>
+
+                    <!--DSC AVG TITLE-->
+                    <TextView
+                        android:id="@+id/tvApplicantDSCTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DSC"
+                        android:textColor="@color/white"
+                        android:padding="4dp"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <!--IFSC-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="2dp">
+
+
+                    <TextView
+                        android:id="@+id/tvApplicantIFSCAvgScore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30.00%"
+                        android:textColor="@color/white"
+                        android:padding="5dp"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:background="@drawable/my_textview_transparent_background"/>
+
+                    <!--PSI AVG TITLE-->
+                    <TextView
+                        android:id="@+id/tvApplicantIFSCTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IFSC"
+                        android:textColor="@color/white"
+                        android:padding="4dp"
+                        android:textSize="14sp"
+                        android:textStyle="normal|bold"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</FrameLayout>

@@ -6,4 +6,117 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+
+    <string-array name="Rooms">
+        <item>Room 1</item>
+        <item>Room 2</item>
+        <item>Room 3</item>
+        <item>Room 4</item>
+        <item>Room 5</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--TODO-> HR USED STRINGS-->
+    <string name="hrCommentTitle">Comment or Feedback</string>
+    <string name="hrHintComment">It would be an honor to hear from you. Thank you.</string>
+
+    <!--TODO: SCORECARD Values-->
+
+
+    <!--RADIO BUTTON Values-->
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="three">3</string>
+    <string name="two">2</string>
+    <string name="one">1</string>
+
+    <!--PSI - 20%-->
+    <string name="psi">Pronunciation, Stress and Intonations</string>
+    <string name="psi1">Globally acceptable pronunciation and neutralized accent</string>
+    <string name="psi2">Syllable and word stress</string>
+    <string name="psi3">Clarity, Volume, Pitch</string>
+    <string name="psi4">Speed and Intonation</string>
+
+    <!--LAVR - 20%-->
+    <string name="lavr">Language Accuracy and Vocabulary Range</string>
+    <string name="lavr1">Vocabulary range</string>
+    <string name="lavr2">Word usage and order</string>
+    <string name="lavr3">Clarity, Volume, Pitch</string>
+    <string name="lavr4">Speed and Intonation</string>
+
+    <!--DSC - 30%-->
+    <string name="dsc">Discourse and Strategic Competency</string>
+    <string name="dsc1">Listening comprehension</string>
+    <string name="dsc2">Clear and logical progression of ideas</string>
+    <string name="dsc3">Use of transitions</string>
+    <string name="dsc4">Controls interactions</string>
+
+    <!--IFSC - 30%-->
+    <string name="ifsc">Interactive Fluency and Sociolinguistic Competency</string>
+    <string name="ifsc1">Over-all tone: confidence and professionalism</string>
+    <string name="ifsc2">Ability to respond to different cultural cues</string>
+    <string name="ifsc3">Understands idioms</string>
+    <string name="ifsc4">Builds rapport</string>
+
+
+    <!--SAMPLE-->
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Duis condimentum malesuada purus eget tincidunt.
+        Mauris augue est, imperdiet non iaculis vitae, imperdiet ac odio.
+        Cras vitae leo sed neque blandit porttitor sed vel ante.
+        Nullam efficitur sem ipsum, non pretium felis ultrices nec.
+        Vestibulum nibh turpis, pretium vel libero eu, blandit maximus massa.
+        Vivamus congue ligula id nisl cursus, ac sodales sem viverra.
+        Suspendisse nec sollicitudin neque.
+
+        Donec consequat varius purus sit amet ullamcorper.
+        Nullam fermentum magna vitae lorem laoreet accumsan.
+        Quisque non nisl pellentesque eros venenatis finibus.
+        Fusce faucibus, ante eget tempus maximus, elit augue condimentum ante,
+        vitae sollicitudin nunc libero vel metus.
+
+        Praesent euismod gravida sollicitudin.
+        Etiam eu ex et lectus molestie tincidunt.
+        Integer mauris purus, interdum ac lorem ac, lobortis iaculis felis.
+        Nullam ac turpis sed lectus blandit interdum sed ac ipsum.
+        Cras sollicitudin felis id nisl congue pharetra.
+        Sed quis dolor molestie, placerat turpis id, euismod turpis.
+        Curabitur quis luctus sapien. Nam vel laoreet augue, at blandit leo.
+        Sed ultrices nulla lobortis augue convallis, blandit dapibus diam ultrices.
+        In eu quam sit amet turpis luctus molestie.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Sed ac sagittis dolor. Integer luctus convallis sagittis.
+        Proin odio ante, pharetra sed imperdiet eget, elementum quis urna.
+        Morbi eget aliquet diam.</string>
+
+
+    <string name="thankYou">Thank You!</string>
+    <string name="saveTitle">Save</string>
+    <string name="submitTitle">Submit</string>
+    <string name="ratingScaleTitle">Rating Scale Interpretation</string>
+
+    <string name="ratingGuideline5">5 - Expert User : The agent has full operational command of the language with only occasional unsystematiic
+        inaccuracies and inappropriacies. The CSR can handle complex argumentation and description well. The agent would perform at senior/middle
+        management level in a call center. Very complex CSR level.</string>
+
+    <string name="ratingGuideline4">4 - Very Good User: The agent has very good operational command of the language though with occasional
+        minor inaccuracies. He generally handles complex language well, understands, and can make detailed reasoning\'s on complex and demanding
+        calls. The agent would perform well at middle management level, QA, training and team leader, complex CSR level.</string>
+
+    <string name="ratingGuideline3">3 - Good User : The agent has a generally effective command of the language despite some inaccuracies
+        and misunderstandings. He can use and understand fairly moderately complex or routine language, and handle calls in a satisfactory manner
+        causing minimum frustration to the caller. The agent will improve fast with support and CSR experience. Moderately complex/routine CSR level.</string>
+
+    <string name="ratingGuideline2">2 - Modest User : The agent has partial command of the language coping with overall meaning in most situations,
+        though is likely to make many mistakes. He should be able to handle basic communication in routin situations. Would perform at routine CSR level
+        only.</string>
+
+    <string name="ratingGuideline1">1 - Limited User : The agent\'s basic competence is limited to familiar questions. He has frequent problems
+        in understanding and expression. The agent is not able to use complex language. Communication breakdowns frequently occur. Should be able
+        to do routine processing work.</string>
+    <string name="application_status_title">Application Status</string>
 </resources>

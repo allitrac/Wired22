@@ -4,34 +4,50 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+        <!--HR-->
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_hr_queued_applicants"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Applicants for Interview" />
+
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_hr_resume_and_scorecard"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:title="Resume and Scorecard" />
+
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_hr_pending_applicants"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Pending Applicants" />
+
+
+        <!--Account Manager-->
+        <item
+            android:id="@+id/nav_am_applicants_for_approval"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Applicants for Approval" />
+        <item
+            android:id="@+id/nav_am_applicants_data"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Applicant's Data" />
+
+
+
+        <!--Front Desk-->
+        <item
+            android:id="@+id/nav_fd_input_exam_results"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Applicant's Exam Result" />
+
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Account">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_logout"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Logout" />
         </menu>
     </item>
 
